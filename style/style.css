@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+body {
+   
+    font-family: 'Mulish', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+}
+
+nav{
+    width: 73.125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    margin-left: 8.44rem;
+    
+    background-color: #fff;
+   
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1.4rem;
+    
+}
+.logo-name{
+    display: flex;
+    color: #131318;
+    font-size: 2rem;
+    font-weight: 800;
+    height: 3rem;
+}
+.logo-name span{
+    color: #FF5400;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.logo img{
+    width: 3rem;
+    height: 3.5rem;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 42rem; */
+    gap: 2rem;
+}
+.menu > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.75rem;
+    list-style: none;
+    text-decoration: none;   
+}
+
+.menu > ul > li > a{
+    color: #424247;
+    font-size: 1.125rem;
+    font-weight:400;
+    text-decoration: none;
+    padding: 0.6rem 0.6rem;
+}
+.menu >ul >li >a span{
+    color: #FF5400;
+    font-size: 1.125rem;
+    font-weight:700;
+    text-decoration: none;
+    padding: 0.6rem 0.6rem;
+}
+.humberger{
+    display: none;
+}
+ .line{
+    width: 1.5rem;
+    height: 0.125rem;
+    background-color: #131318;
+    margin: 0.25rem;
+    margin-right: 2rem;
+    margin-top: -0.125rem;
+    justify-content: center;
+    border-radius: 0.25rem;
+    display: none;
+    
+}
+
+@media only screen and (max-width: 768px){
+    nav{
+        width: 100%;
+        margin-left: 0;
+        padding: 0 1.5rem;
+    }
+    .logo-name{
+        font-size: 1.5rem;
+    }
+    .logo-name span{
+        font-size: 1.5rem;
+    }
+    .menu{
+        display: none;
+    }
+    .humberger{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .line{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .line1{
+        transform: rotate(45deg);
+    }
+    .line2{
+        transform: rotate(-45deg);
+    }
+    .line3{
+        display: none;
+    }
+    .menu-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 4.5rem;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+    .menu-list.active{
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu-list > ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        list-style: none;
+        text-decoration: none;
+    }
+    .menu-list > ul > li > a{
+        color: #424247;
+        font-size: 1.125rem;
+        font-weight:400;
+        text-decoration: none;
+        padding: 0.6rem 0.6rem;
+    }
+    .menu-list >ul >li >a span{
+        color: #FF5400;
+        font-size: 1.125rem;
+        font-weight:700;
+        text-decoration: none;
+        padding: 0.6rem 0.6rem;
+    }
+}
+```
+```
+
+
+@media screen and (max-width: 768px) {
+    .menu-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 4.5rem;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+    .menu-list.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu-list > ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        list-style: none;
+        text-decoration: none;
+    }
+    .menu-list > ul > li > a {
+        color: #424247;
+        font-size: 1.125rem;
+        font-weight: 400;
+        text-decoration: none;
+        padding: 0.6rem 0.6rem;
+    }
+    .menu-list > ul > li > a span {
+        color: #ff5400;
+        font-size: 1.125rem;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 0.6rem 0.6rem;
+    }
+}
